@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>GM Hobbies</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Invite</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>">
+
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Digital Invite" />
+  <meta property="og:description" content="Digital RSVPs and Mobile Invitations" />
+  <meta property="og:image" content="https://digitalinvite.github.io/digital_invite_photo.png" />
+  <meta property="og:url" content="https://digitalinvite.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="digital_invite" />
+  <meta name="twitter:title" content="Photos Album" />
+  <meta name="twitter:description" content="Mobile Invitations and RSVPs" />
+  <meta name="twitter:image" content="https://digitalinvite.github.io/digital_invite_photo.png" />
 </head>
-<body>
-    <h1>UNDER CONSTRUCTION</h1>
+<body class="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-blue-500 flex items-center justify-center px-4">
+  <div class="bg-black/100 p-8 rounded-2xl shadow-xl w-full max-w-md text-center">
+    
+    <!-- Profile Image -->
+    <img 
+      src="./GMHobbies_logo.png" 
+      alt="GM Hobbies Logo" 
+      class="w-80 h-80 mx-auto rounded-full mb-4 shadow-md object-cover"
+    />
+
+    <!-- Description -->
+    <h1 class="text-xl font-semibold mb-1 text-white">We make custom shirts!</h1>
+    <p class="text-white mb-6 text-sm">Want to create your own logo/branded shirt? Contact us to get started - we're local!</p>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xovdbprg" method="POST" class="space-y-4 text-left text-white">
+        <div>
+          <label class="block text-sm font-medium text-white">Your Email or Phone</label>
+          <input type="text" name="contact" required 
+            class="w-full mt-1 px-4 py-2 border border-white bg-black/20 text-white placeholder-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" 
+            placeholder="you@example.com or (123) 456-7890" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-white">Subject</label>
+          <input type="text" name="subject" required 
+            class="w-full mt-1 px-4 py-2 border border-white bg-black/20 text-white placeholder-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" 
+            placeholder="Your Subject" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-white">Message</label>
+          <textarea name="message" rows="4" required 
+            class="w-full mt-1 px-4 py-2 border border-white bg-black/20 text-white placeholder-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" 
+            placeholder="Your message here..."></textarea>
+        </div>
+        <button type="submit" 
+          class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">
+          Send Message
+        </button>
+      </form>
+  </div>
 </body>
 </html>
